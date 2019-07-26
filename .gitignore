@@ -18,3 +18,12 @@
 /yarn-error.log
 
 .byebug_history
+
+# Ignore credentials
+/config/database.yml
+
+# Ignore image file
+public/uploads/tmp
+
+# Ignore ide files
+.idea
