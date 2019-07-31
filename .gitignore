@@ -22,8 +22,8 @@
 # Ignore credentials
 /config/database.yml
 
-# Ignore image file
-public/uploads/tmp
+# Ignore downloaded file
+public/system/products_uploads
 
 # Ignore ide files
 .idea
