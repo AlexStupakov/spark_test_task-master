@@ -1,0 +1,8 @@
+<%= render 'shared/errors', object: @products_upload %>
+
+<%= form_for @products_upload, url: products_upload_index_path, method: :post do |f| %>
+  <div class="form-group">
+    <%= f.file_field :csvfile, class: 'form-control-file', id: 'csv-upload', required: true, onchange: 'this.form.submit()' %>
+  </div>
+<% end %>
+
