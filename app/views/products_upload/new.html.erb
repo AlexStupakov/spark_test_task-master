@@ -2,11 +2,7 @@
 
 <%= form_for @products_upload, url: products_upload_index_path, method: :post do |f| %>
   <div class="form-group">
-    <%= f.label :csvfile %>
-    <%= f.file_field :csvfile, class: 'form-control-file', required: true %>
+    <%= f.file_field :csvfile, class: 'form-control-file', id: 'csv-upload', required: true, onchange: 'this.form.submit()' %>
   </div>
-
-  <%#= f.hidden_field :user_id, 1 %>
-
-  <%= f.button "Upload CSV", class: 'btn btn-primary' %>
 <% end %>
+
