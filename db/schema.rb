@@ -34,7 +34,8 @@ ActiveRecord::Schema.define(version: 20190729104204) do
     t.string "csvfile_content_type"
     t.integer "csvfile_file_size"
     t.datetime "csvfile_updated_at"
-    t.integer "user_id"
+    t.string "status"
+    t.string "import_errors"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
